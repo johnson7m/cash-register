@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+:root {
+  --bg-color: #FCF6D4;
+  --btn-color: #F5EDC3;
+}
+
+#container1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  justify-content: space-evenly;
+}
+
+#container2 {
+  height: 100%;
+  width: 30%;
+}
+
+.item {
+  background-color: var(--btn-color);
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: .5rem;
+}
+
+.item:hover {
+  background-color: lightyellow;
+}
+
+
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+
+#cash-register-body {
+  display: flex;
+  height: 95vh;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+body {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.container {
+  text-align: center;
+
+}
+
+
+#header {
+  font-family: Raleway, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#bold {
+  font-weight: 400;
+}
+
+
+
+#calculator-bottom {
+  height: 30%;
+  width: 100%;
+}
+
+
+.submit-btns {
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  height: 50%;
+  width: 100%;
+}
+
+#calculator-display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  border: 4px solid black;
+  width: 100%;
+  height: 20%;
+  background-color: black;
+}
+
+#cash-register-input {
+  padding-top: .5rem;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1.75rem;
+  height: 100%;
+  width: 100%;
+  color: lightgreen;
+}
+
+#cash-register-output {
+  font-family: 'Press Start 2P', system-ui;
+  padding-top: .5rem;
+  font-size: .75rem;
+  height: 100%;
+  width: 100%;
+  color: green;
+}
+
+#number-grid {
+  display: grid;
+  gap: .2rem;
+  grid-template-columns: auto auto auto;
+  height: 80%;
+  width: 100%;
+  border: 4px solid black;
+}
+
+.number {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1rem;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  background-color: var(--btn-color);
+  cursor: pointer;
+}
+
+#add-btn {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1rem;
+  background-color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+#decimal {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1rem;
+  background-color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+#change-btn {
+  width: 5rem;
+  height: 2rem;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: .7rem;
+  margin-top: .5rem;
+  padding-top: .1rem;
+  background-color: var(--btn-color);
+}
+
+
+#change-btn2 {
+  margin-top: .5rem;
+  width: 5rem;
+  height: 2rem;
+  font-size: .7rem;
+  padding-top: .1rem;
+  font-family: 'Press Start 2P', sans-serif;
+  background-color: var(--btn-color);
+}
+
+#add-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+#decimal:hover {
+  color: white;
+  background-color: black;
+}
+
+.number:hover {
+  color: white;
+  background-color: black;
+}
+
+#checkout-btn {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1rem;
+  background-color: lightgoldenrodyellow;
+}
+
+#checkout-btn:hover {
+  color: white;
+  background-color: lightgreen;
+}
+
+#clear-btn {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1rem;
+  background-color: lightgoldenrodyellow;
+}
+
+#clear-btn:hover {
+  color: white;
+  background-color: lightblue;
+}
+
+.bottom-btns {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 100%;
+  width: 50%;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1rem;
+  background-color: lightgoldenrodyellow;
+  white-space: balance;
+}
+
+#bottom-btns-container {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 40%;
+}
+
+
+
+#cart-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+
+#cart-container h1 {
+  font-family: 'Press Start 2P', system-ui;
+  padding-top: .4rem;
+  font-size: 1.5rem;
+  background-color: lightgoldenrodyellow;
+  height: 45px;
+  width: 100%;
+}
+
+#cart-list {
+  height: 100%;
+  overflow: hidden-scroll;
+  width: 70%;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: .5rem;
+  padding: .5rem;
+}
+
+.cart-item {
+  padding: .2rem;
+}
+
+
+
+#cart-total {
+  width: 100%;
+  height: 100%;
+}
+
+#cart-total h1 {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1rem;
+  padding-top: .75rem;
+  height: 40px;
+  background-color: var(--bg-color);
+}
+
+
+.totals {
+  padding: .2rem;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: .6rem;
+}
+
+
+#item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: .5rem;
+  height: 60%;
+}
+
+#item-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 100%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+#drawer-menu {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  width: 60vw;
+  height: 40vh;
+  background-color: black;
+  top: 38%;
+  left: 5%;
+  opacity: 95%;
+
+}
+
+#prompt-menu {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  width: 60vw;
+  height: 40vh;
+  background-color: black;
+  top: 38%;
+  left: 5%;
+  opacity: 95%;
+}
+
+#prompt-menu h1 {
+  margin-top: 4rem;
+  text-align: center;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1.25rem;
+  color: white;
+}
+
+#drawer-menu h1 {
+  color: white;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1rem;
+  padding-top: .5rem;
+
+}
+
+#drawer-menu h2 {
+  color: green;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: .75rem;
+  padding-top: .25rem;
+
+}
+
+h3 {
+  text-align: start;
+  color: white;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: .8rem;
+  padding: .2rem;
+}
+
+#remove-change-btn {
+  position: fixed;
+  display: none;
+  z-index: 3;
+  top: 60%;
+  right: 40%;
+  height: 10%;
+  width: 10%;
+  background-color: lightcoral;
+  color: black;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: .7rem;
+}
+
+#close-drawer-btn {
+  position: absolute;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: .5rem;
+  display: none;
+  z-index: 5;
+  top: 38%;
+  right: 35%;
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+#cart-btn-container {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-right: 1px solid black;
+  height: 100%;
+  width: 2.8rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+#totals-container {
+  justify-content: space-evenly;
+}
+
+#cashInDrawerBtnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#sub-container {
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: justify;
+}
+
+#remove-from-cart-btn {
+  background-color: lightcoral;
+  padding-top: .2rem;
+}
+
+.arrow-button {
+  background-color: lightgreen;
+  padding-top: .25rem;
+}
+
+#clear-from-cart-btn {
+  background-color: lightgoldenrodyellow;
+}
+
+#clear-from-cart-btn:hover {
+  color: white;
+  background-color: lightcoral;
+}
+
+footer {
+  background-color: black;
+}
+
+.contact-link {
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  width: fit-content;
+}
+
+.contact-link:hover {
+  transform: translateY(-5px);
+}
+
+.contact-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.btn {
+  padding: .2rem;
+  font-family: 'Poppins', sans-serif;
+  transition: all .3s ease-in-out;
+  color: white;
+}

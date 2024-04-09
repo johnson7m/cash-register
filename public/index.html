@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
+    crossorigin="anonymous">
+  <link rel='stylesheet' href="style.css">
+  <title>cash register project</title>
+</head>
+
+<body>
+
+  <div id='cash-register-body'>
+    <div id="container1">
+      <div id='cart-container'>
+        <h1>Cart Items</h1>
+        <div id='cart-items'>
+          <ul id="cart-list">
+          </ul>
+          <div id='cart-btn-container'>
+            <button id='remove-from-cart-btn'><i class="fa-solid fa-trash"></i></button>
+            <button id='move-up-cart-btn' class='arrow-button'><i class="fa-solid fa-arrow-up"></i></button>
+            <button id='move-down-cart-btn' class='arrow-button'><i class="fa-solid fa-arrow-down"></i></button>
+          </div>
+          <div id='cart-total'>
+            <h1>Cart Total</h1>
+            <div class='flex-container' id='totals-container'>
+              <div class='flex-container' id='sub-container'>
+                <p class="totals" id='subtotal'>Subtotal : $0.00</p>
+                <p class="totals" id='taxes'>Taxes : $0.00</p>
+                <p class="totals" id="total">Total : $0.00</p>
+              </div>
+              <div id='cashInDrawerBtnContainer'>
+                <p class="totals">Cash In Drawer</p>
+                <button id="change-btn">$335.41</button>
+                <br class='padding-buffer'>
+                <p class="totals">Change Due</p>
+                <button id="change-btn2">0.00</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id='close-drawer-btn'>X</button>
+      <div id='item-container'>
+        <div id='drawer-menu'>
+        </div>
+        <div id='prompt-menu'></div>
+
+        <button id='remove-change-btn'>change</button>
+        <div id='item-grid'>
+          <button class='item'>Dung Pie</button>
+          <button class="item">Bread</button>
+          <button class="item">Milk</button>
+          <button class="item">Eggs</button>
+          <button class="item">Butter</button>
+          <button class="item">Juice</button>
+          <button class="item">Coffee</button>
+          <button class="item">Tea</button>
+          <button class="item">Sugar</button>
+          <button class="item">Apple</button>
+          <button class="item">Orange</button>
+          <button class="item">Banana</button>
+          <button class="item">Pear</button>
+          <button class="item">Candy</button>
+          <button class="item">Cherry</button>
+          <button class="item">Strawberry</button>
+          <button class="item">Blueberry</button>
+          <button class="item">Raspberry</button>
+          <button class="item">Blackberry</button>
+          <button class="item">Pineapple</button>
+          <button class="item">Poptart</button>
+          <button class="item">Lemon</button>
+          <button class="item">Lime</button>
+          <button class="item">Grape</button>
+          <button class="item">Kiwi</button>
+          <button class="item">Papaya</button>
+          <button class="item">Mango</button>
+          <button class="item">Peach</button>
+        </div>
+        <div id='bottom-btns-container'>
+          <button class="submit-btns bottom-btns" id='clear-from-cart-btn'>empty cart</button>
+        </div>
+      </div>
+    </div>
+    <div id="container2">
+      <div id='calculator'>
+        <div id='calculator-display'>
+          <p id='cash-register-input'>00000</p>
+          <p id='cash-register-output'>000</p>
+        </div>
+        <div id='number-grid'>
+          <button type="button" class="number" id="number1">1</button>
+          <button type="button" class="number" id="number1">2</button>
+          <button type="button" class="number" id="number3">3</button>
+          <button type="button" class="number" id="number4">4</button>
+          <button type="button" class="number" id="number5">5</button>
+          <button type="button" class="number" id="number6">6</button>
+          <button type="button" class="number" id="number7">7</button>
+          <button type="button" class="number" id="number8">8</button>
+          <button type="button" class="number" id="number9">9</button>
+          <button type="button" id="decimal">.</button>
+          <button type="button" class="number" id="number0">0</button>
+          <button type="button" id="add-btn">+</button>
+        </div>
+      </div>
+      <div id="calculator-bottom">
+        <button class="submit-btns" id='checkout-btn'>checkout</button>
+        <button class="submit-btns" id='clear-btn'>clear</button>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <div class="contact-bar">
+      <a href="" target="_blank" class="btn contact-link"> <i class="fa-brands fa-linkedin"></i> </i>linkedIn</a>
+      <a class="btn contact-link" href="" target="_blank"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+      <a class="btn contact-link" href="" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a class="btn contact-link" href="" target="_blank"><i class="fa-solid fa-envelope"></i> </i>Send a mail</a>
+      <a class="btn contact-link" href="" target="_blank"><i class="fa-solid fa-mobile"></i> Call me</a>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
